@@ -39,7 +39,7 @@ public class LearningCurve : MonoBehaviour
         Debug.LogFormat("Next skill at level {0}", nextSkillLevel);
 
         // Testing conditinal statements
-        PocketChange();
+        PocketChange(currentGold);
         OpenTreasureChamber();
         SwitchingAround();
 
@@ -126,7 +126,7 @@ public class LearningCurve : MonoBehaviour
     }
 
     // Uses branching if-else statements
-    public void PocketChange()
+    public void PocketChange(int currentGold)
     {
         if (currentGold > 50)
         {
@@ -193,6 +193,7 @@ public class LearningCurve : MonoBehaviour
                 break;
         }
     }
+    
 }
 
 
