@@ -27,6 +27,8 @@ public class LearningCurve : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        int[] myNewArrayOfInts = new int[7] {11,12,13,14,15,16,17};
+        myNewArrayOfInts[7] = 55;
         ComputeAge();
 
         Debug.Log($"A string can have variables like {firstName} inserted directly!");
